@@ -2,8 +2,154 @@
 <head>
 	<title>Mars Rover Kata!</title>
 	<script type="text/javascript" src="rover.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+<h1> Welcome to our Mars Operation </h1>
 
+<p>In order to make the operation works fine, we need you to drive our rover around planet Mars. </p>
+
+<p> The rover stars on the following position with north direction (col5, line 5): </p>
+<div>
+<table>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td><img class="rovericon" src="./imgs/rover.png"> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+</table>
+</div>
+<p>You can choose a sequence of the following commands to move the rover: </p>
+<ol>
+	<li>"f" to go forward</li>
+	<li>"b" to go back</li>
+	<li>"r" change the direction right*</li>
+	<li>"l" change the direction left*</li>
+</ol>
+<p>*Note that if you select "r" or "l" the rover won't move right or left automatically. For example, if the Rover have direction "N" and we send the command right the new direction of the Rover will be E.</p>
+
+<p> Press the button to enter a sequence of commands and check the console to view the rover's movement: </p>
+<input type="button" value="Enter commands" onclick="getSequence();"/>
+
+<p> With the following button you can know where your rover is: </p>
+<input type="button" value="Where is my Rover?" onclick="getRoverData();"/>
 </body>
+<footer>
+	<p>Ironhack Prebootcamp Web Development 2017 </p>
+</footer>
 </html>
