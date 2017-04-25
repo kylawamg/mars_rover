@@ -281,12 +281,18 @@ function prinGrid (grid, rover){
     }
   }
   //nuevo rover
-  function createNewRover() {
 
-    alert("Nuevo rover enviado. Mira la consola para ver donde ha atterizado.");
-    flagSecondRover = true;
-    console.log("La dirección de tu nuevo rover es: " + secondRover.direction);
-    console.log("La posicion de tu nuevo rover es: " + secondRover.position);
+  function createNewRover() {
+    if (flagSecondRover === false) {
+      alert("Nuevo rover enviado. Mira la consola para ver donde ha atterizado.");
+      flagSecondRover = true;
+      console.log("La dirección de tu nuevo rover es: " + secondRover.direction);
+      console.log("La posicion de tu nuevo rover es: " + secondRover.position);
+      return flagSecondRover;
+    }else {
+      alert("Ya no puedes enviar mas rovers!");
+    }
+
     return flagSecondRover;
   }
 getRoverData (myRover);
