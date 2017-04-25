@@ -141,13 +141,23 @@
 	<li>"r" change the direction right*</li>
 	<li>"l" change the direction left*</li>
 </ol>
-<p>*Note that if you select "r" or "l" the rover won't move right or left automatically. For example, if the Rover have direction "N" and we send the command right the new direction of the Rover will be E.</p>
+<p>*Note that if you select "r" or "l" the rover won't move right or left automatically. For example, if the Rover have direction "N" and we send the command r then the new direction of the Rover will be E.</p>
 
+<p> Important notes:</p>
+<ul>
+	<li>The rover is on a 10*10 grid.</li>
+	<li>You can go from one edge of the grid to another.</li>
+	<li>The grid has obstacles and you can not cross them.</li>
+	<li>You can check the "map" of the grid on the console, it refresh with each movement.</li>
+</ul>
 <p> Press the button to enter a sequence of commands and check the console to view the rover's movement: </p>
 <input type="button" value="Enter commands" onclick="getSequence();"/>
 
 <p> With the following button you can know where your rover is: </p>
 <input type="button" value="Where is my Rover?" onclick="getRoverData();"/>
+
+<p>You can send one more rover to mars clicking the button below: </p>
+<input type="button" value="Send new rover" onclick="createNewRover();"/>
 </body>
 <footer>
 	<p>Ironhack Prebootcamp Web Development 2017 </p>
